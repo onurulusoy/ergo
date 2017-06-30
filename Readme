@@ -1,0 +1,39 @@
+************************************
+
+CommandLine#1
+>npm install
+>npm install -g selenium-standalone
+>selenium-standalone install
+>selenium-standalone start
+
+CommandLine#2
+>node node_modules\codeceptjs-webdriverio\node_modules\codeceptjs\bin\codecept.js run --steps
+
+************************************
+
+Prerequisity:
+  - Java version should be 1.8.x
+
+node node_modules\codeceptjs-webdriverio\node_modules\codeceptjs\bin\codecept.js init
+D:\work4>node node_modules\codeceptjs-webdriverio\node_modules\codeceptjs\bin\codecept.js init
+
+  Welcome to CodeceptJS initialization tool
+  It will prepare and configure a test environment for you
+
+Installing to D:\work4
+? Where are your tests located? ./*_test.js
+? What helpers do you want to use? WebDriverIO
+? Where should logs, screenshots, and reports to be stored? ./output
+? Would you like to extend I object with custom steps? Yes
+? Do you want to choose localization for tests? English (no localization)
+? Where would you like to place custom steps? ./steps_file.js
+Configure helpers...
+? [WebDriverIO] Base url of site to be tested http://localhost
+? [WebDriverIO] Browser in which testing will be performed chrome
+Steps file created at D:\work4\steps_file.js
+Config created at D:\work4\codecept.json
+Directory for temporary output files created at `_output`
+Almost done! Create your first test by executing `codeceptjs gt` (generate test) command
+D:\work4>node node_modules\codeceptjs-webdriverio\node_modules\codeceptjs\bin\codecept.js gs
+
+

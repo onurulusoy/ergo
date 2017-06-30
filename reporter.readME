@@ -1,0 +1,7 @@
+for JUnit xml report:
+
+  node node_modules\codeceptjs-webdriverio\node_modules\codeceptjs\bin\codecept.js run --steps --reporter mocha-junit-reporter
+  
+for html report:
+  
+  node node_modules\codeceptjs-webdriverio\node_modules\codeceptjs\bin\codecept.js run --steps --reporter mochawesome
