@@ -1,5 +1,5 @@
-node {
-   stage('windowsPC') { // for display purposes
+node('windowsPC') {
+   stage('SCM') { // for display purposes
       checkout scm
    }
    stage('Build - NPM install') {
