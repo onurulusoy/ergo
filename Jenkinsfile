@@ -9,7 +9,7 @@ node {
 		 sh 'selenium-standalone start'
    }
    stage('Test') {
-         sh 'node node_modules\codeceptjs-webdriverio\node_modules\codeceptjs\bin\codecept.js run --steps'
+         sh 'node node_modules/codeceptjs-webdriverio/node_modules/codeceptjs/bin/codecept.js run --steps'
    }
    stage('Results') {
       junit 'reports/*.xml'
