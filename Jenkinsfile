@@ -3,13 +3,13 @@ node {
       checkout scm
    }
    stage('Build') {
-         sh 'npm install'
-         sh 'npm install -g selenium-standalone'
-		 sh 'selenium-standalone install'
-		 sh 'selenium-standalone start'
+        powershell 'npm install'
+        powershell 'npm install -g selenium-standalone'
+	powershell 'selenium-standalone install'
+	powershell 'selenium-standalone start'
    }
    stage('Test') {
-         sh 'node node_modules/codeceptjs-webdriverio/node_modules/codeceptjs/bin/codecept.js run --steps'
+         powershell 'node node_modules/codeceptjs-webdriverio/node_modules/codeceptjs/bin/codecept.js run --steps'
    }
    stage('Results') {
       junit 'reports/*.xml'
