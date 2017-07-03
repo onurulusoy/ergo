@@ -1,4 +1,4 @@
-Feature('CodeceptJS demo');
+Feature('Ergo Sigorta Demo');
 
 Scenario('Ergo Sigorta Main Page', (I) => {
     I.amOnPage('/');
