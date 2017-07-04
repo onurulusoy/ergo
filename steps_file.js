@@ -9,7 +9,7 @@ module.exports = function() {
 
         checkImage(link) {
             var response = request('GET', link);
-            assert.strictEqual(response.statusCode, 300);
+            assert.strictEqual(response.statusCode, 200);
         }
 
         // Define custom steps here, use 'this' to access default methods of I.
