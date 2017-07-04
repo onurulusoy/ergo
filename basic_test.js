@@ -32,7 +32,7 @@ Scenario('Anlaşmalı Servisler', (I) => {
     I.selectOption('anlasmaliServislerDistrict', 'GÖLBAŞI');
     I.click('//*[@id="anlasmaliServislerHomepageForm"]/button');
     I.waitForElement('//*[@id="anlasmaliServislerMarka"]', 2);
-    I.seeCurrentUrlEquals('/ergo-anlasmali-oto-servisler');
+    I.seeCurrentUrlEquals('https://www.ergosigorta.com/ergo-anlasmali-oto-servisler');
     I.waitForText('ANKARA', 5, '//*[@selected="selected"]');
     I.waitForText('GÖLBAŞI', 5, '//*[@selected="selected"]');
     I.selectOption('anlasmaliServislerMarka', 'BMW');
