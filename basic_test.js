@@ -2,7 +2,7 @@ Feature('Ergo Sigorta Demo');
 
 Scenario('Ergo Sigorta Main Page', (I) => {
     I.amOnPage('/');
-    I.seeInTitle('ERGO Sigorta');
+    I.seeInTitle('ERGOasdf Sigorta');
     I.see('En Yakın ERGO Acentesi');
     I.see('Anlaşmalı Servisler');
     I.see('Anlaşmalı Sağlık Kuruluşları');
